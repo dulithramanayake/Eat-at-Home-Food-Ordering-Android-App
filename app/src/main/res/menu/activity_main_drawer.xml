@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_restaurant"
+            android:iconTint="@color/colorWhite"
+            android:title="Nearby Restaurants" />
+
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite"
+            android:title="Favorites" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:iconTint="@color/colorWhite"
+            android:title="Cart" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_access_time"
+            android:iconTint="@color/colorWhite"
+            android:title="Orders" />
+
+        <item
+            android:id="@+id/nav_sign_out"
+            android:icon="@drawable/ic_exit_to_app"
+            android:iconTint="@color/colorWhite"
+            android:title="Sign Out" />
+
+    </group>
+</menu>

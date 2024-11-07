@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Server.Activities.AboutActivityRes">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA5uYltRfzNfQtMyMt9YKIXyKwCvqbW_BU" />
+
+        <activity
+            android:name=".Client.Activities.NearbyRestaurantsActivity"
+            android:label="@string/title_activity_nearby_restaurants" />
+        <activity android:name=".Administrator.Activities.AddRestaurantsAdminActivity" />
+        <activity android:name=".Administrator.Activities.AddRestaurantsActivity" />
+        <activity android:name=".Administrator.Activities.SignInActivityAppAdmin" />
+        <activity android:name=".Server.Activities.SignInAdminActivity" />
+        <activity android:name=".Client.Activities.TrackingOrderActivity" />
+        <activity
+            android:name=".Rider.Activities.TrackingOrderActivityRider"
+            android:label="@string/title_activity_tracking_order" />
+        <activity android:name=".Rider.Activities.HomeActivityRider" />
+        <activity android:name=".Rider.Activities.SignInAsRiderActivity" />
+        <activity android:name=".Client.Activities.UpdateAddressActivity" />
+        <activity android:name=".Client.Activities.UpdateUsernameActivity" />
+        <activity android:name=".Client.Activities.ProfileActivity" />
+        <activity android:name=".Server.Activities.ManageAccountActivity" />
+        <activity android:name=".Server.Activities.OrderDetailActivity" />
+        <activity android:name=".Server.Activities.RiderManagementActivityRes" />
+        <activity android:name=".Server.Activities.TrackingOrderActivityRes" />
+        <activity android:name=".Server.Activities.ViewCommentActivityRes" />
+        <activity android:name=".Server.Activities.MainAdminActivity" />
+        <activity android:name=".Server.Activities.StaffSignInActivity" />
+        <activity android:name=".Server.Activities.RestaurantMainActivity" />
+        <activity android:name=".Client.Activities.FavoritesActivity" />
+        <activity android:name=".Client.Activities.ShowCommentActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service android:name=".Rider.Service.MyFirebaseIdServiceRider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Rider.Service.MyFirebaseMessagingRider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Client.Services.MyFirebaseIdService"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Client.Services.MyFirebaseMessaging"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Server.Service.MyFirebaseIdServiceRes"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Server.Service.MyFirebaseMessagingRes"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Server.Activities.OrderStatusActivityRes" />
+        <activity android:name=".Client.Activities.RestaurantListActivity" />
+        <activity android:name=".Server.Activities.FoodListActivityRes" />
+        <activity android:name=".Client.Activities.OrderStatusActivity" />
+        <activity android:name=".Client.Activities.CartActivity" />
+        <activity android:name=".Client.Activities.FoodDetailsActivity" />
+        <activity android:name=".Client.Activities.FoodListActivity" />
+        <activity
+            android:name=".Client.Activities.CategoriesActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Client.Activities.SignUpActivity" />
+        <activity android:name=".Client.Activities.SignInActivity" />
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

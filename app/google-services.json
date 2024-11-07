@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "758902757598",
+    "firebase_url": "https://new-foodon-app-default-rtdb.firebaseio.com",
+    "project_id": "new-foodon-app",
+    "storage_bucket": "new-foodon-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758902757598:android:b9af5895b4c149b421ca4f",
+        "android_client_info": {
+          "package_name": "com.example.eatathome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNj3aTikCJ0Lz0UwPcvDT70Xb9NVyKbPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
